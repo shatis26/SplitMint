@@ -98,3 +98,6 @@ SplitMint/
 - Custom splits must sum exactly to the expense total.
 
 ---
+
+## License
+MIT
