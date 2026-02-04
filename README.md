@@ -1,45 +1,18 @@
-﻿# SplitMint — Your Gateway to Karbon
+# SplitMint — Smart Expense Splitting Platform
 
-A MERN-style expense splitting app with groups, participants, expenses, balance engine, dashboards, and optional MintSense AI parsing.
+SplitMint is a MERN-style expense splitting application that enables users to manage shared expenses within groups, automatically calculate balances, and gain spending insights through dashboards. It also includes MintSense, an optional AI-inspired local heuristic parser for extracting expense data without relying on external APIs.
 
-## Tech
-- React + Vite (client)
-- Node + Express (server)
-- MongoDB (database)
+## Features
+- Group-based expense management
+- Add participants and split expenses seamlessly
+- Automatic balance calculation engine
+- Secure user authentication using JWT
+- Interactive dashboards for spending insights
+- MintSense local heuristic expense parsing
+- Scalable and production-ready backend
 
-## Setup
-```bash
-npm run install:all
-```
-
-## Run locally (easy)
-1) Create `.env.local` in the repo root:
-```
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_long_random_secret
-```
-2) Start both server + client:
-```bash
-npm run dev
-```
-
-Client: http://localhost:5173
-Server: http://localhost:4001
-
-## Deploy to Vercel
-1) Push repo to GitHub
-2) Create a MongoDB Atlas database and copy `MONGO_URI`
-3) In Vercel project settings, set env vars:
-   - `MONGO_URI`
-   - `JWT_SECRET`
-4) Deploy the repo root
-
-## Quick deploy checklist
-- `MONGO_URI` set in Vercel env
-- `JWT_SECRET` set in Vercel env
-- Build command uses repo root (see `vercel.json`)
-- API works: `/api/auth/me` returns 401 without a token
-
-## Notes
-- Each group supports up to 3 additional participants + the primary user.
-- MintSense is a local heuristic parser; no external APIs are used.
+## Tech Stack
+**Frontend:** React, Vite  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB (MongoDB Atlas supported)  
+**Authentication:** JSON Web Tokens (JWT)
